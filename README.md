@@ -5,14 +5,6 @@
 A DIY **QR Payment Soundbox** built using ESP32 that announces payment confirmations in real-time — similar to commercial UPI soundboxes, but designed for **personal (non-merchant) and scalable merchant use cases**.
 
 ---
-<div align="center">
-  <a href="YOUR_YOUTUBE_VIDEO_URL_HERE">
-    <img src="https://img.youtube.com/vi/YOUR_YOUTUBE_VIDEO_ID/0.jpg" alt="Watch the Soundbox Demo" width="70%">
-    <br>
-    ▶️ <b>Click here to watch the full project assembly and audio announcement test</b>
-  </a>
-</div>
-
 ## 🚀 Overview
 
 This project enables real-time **audio announcements for UPI payments** by:
@@ -25,6 +17,18 @@ This project enables real-time **audio announcements for UPI payments** by:
 
 - 🧑‍💻 **Non-merchant accounts** (via phone → MQTT)
 - 🏪 **Merchant/scalable setup** (via SIM module directly on device)
+
+---
+
+## 📺 Project Demonstration
+
+<div align="center">
+  <a href="YOUR_YOUTUBE_VIDEO_URL_HERE">
+    <img src="https://img.youtube.com/vi/YOUR_YOUTUBE_VIDEO_ID/0.jpg" alt="Watch the Soundbox Demo" width="80%" style="border-radius: 10px;">
+    <br>
+    <b>▶️ Click to watch the Soundbox boot up, connect to the network, and process a live transaction test</b>
+  </a>
+</div>
 
 ---
 
@@ -110,7 +114,21 @@ Supports:
 
 ## 🧪 Prototyping & Testing
 
-Before full integration, individual modules were tested:
+Before full enclosure integration, individual modules were rigorously unit-tested across power draw cycles.
+
+### 🔬 Evolution Stages
+<div align="center">
+  <img src="path/to/your/circuit_only_image.jpg" width="45%" alt="Breadboard Circuit Layout">
+  <img src="path/to/your/working_internals_image.jpg" width="45%" alt="Assembled Hardware Matrix">
+  <p><i>Left: Prototype breadboard validation circuit. Right: Main components integrated with power rails inside the final housing chassis.</i></p>
+</div>
+
+### ✅ Unit Tests Conducted
+- ESP32 ↔ DFPlayer serial command continuity  
+- SIM800L registration stabilization under $2\text{A}$ transient load bursts  
+- Cellular GPRS session persistence & MQTT heartbeat logic (`state == -1` mitigation)  
+
+---
 
 ### ✅ Unit Tests Conducted
 - ESP32 ↔ DFPlayer communication  
@@ -128,16 +146,22 @@ Before full integration, individual modules were tested:
 
 ---
 
-## 🧱 Enclosure Design
+## 🧱 Enclosure Design & CAD
 
-- Custom designed using Fusion 360  
-- 3D printed shell  
+- Custom designed multi-piece shell engineered within Fusion 360 to optimize acoustic resonance and component packaging constraints.
+
+<div align="center">
+  <img src="path/to/your/fusion360_screenshot.jpg" width="45%" alt="Fusion 360 Model">
+  <img src="path/to/your/finished_pieces_image.jpg" width="45%" alt="3D Printed Components">
+  <br>
+  <img src="path/to/your/pieces_assembled_image.jpg" width="60%" alt="Mechanical Assembly Fit Test">
+  <p><i>Top-Left: 3D modeling and layout parameters. Top-Right: Raw printed shells. Bottom: Structural test alignment before final adhesive lock.</i></p>
+</div>
 
 Designed to:
-- Fit all components snugly  
-- Allow proper sound output  
-- Provide antenna clearance  
-- Support mounting & durability  
+- Securely mount the 18650 cell cluster and MT3608 buck-boost converter safely.
+- Feature internal guide tracks for optimal cellular antenna separation from audio traces.
+- Support interchangeable front branding faceplates.
 
 ---
 
