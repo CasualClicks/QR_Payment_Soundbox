@@ -5,6 +5,13 @@
 A DIY **QR Payment Soundbox** built using ESP32 that announces payment confirmations in real-time — similar to commercial UPI soundboxes, but designed for **personal (non-merchant) and scalable merchant use cases**.
 
 ---
+<div align="center">
+  <a href="YOUR_YOUTUBE_VIDEO_URL_HERE">
+    <img src="https://img.youtube.com/vi/YOUR_YOUTUBE_VIDEO_ID/0.jpg" alt="Watch the Soundbox Demo" width="70%">
+    <br>
+    ▶️ <b>Click here to watch the full project assembly and audio announcement test</b>
+  </a>
+</div>
 
 ## 🚀 Overview
 
